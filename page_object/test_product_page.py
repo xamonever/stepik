@@ -8,8 +8,8 @@ from stepik.page_object.pages.login_page import LoginPage
 
 
 @pytest.mark.need_review
-@pytest.mark.parametrize('link', promo_links)
-def test_guest_can_add_product_to_basket(wd, link):
+# @pytest.mark.parametrize('link', promo_links)
+def test_guest_can_add_product_to_basket(wd, link='http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207/?promo=offer0'):
 
     try:
         page = ProductPage(wd, link, 5)
