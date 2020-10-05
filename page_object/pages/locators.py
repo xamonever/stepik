@@ -30,8 +30,7 @@ class ProductPageLocators:
     PRODUCT_PAGE__ITEM_NAME = (By.XPATH, '//h1')
     PRODUCT_PAGE__ITEM_PRICE = (By.XPATH, '//div[./h1]/p[@class="price_color"]')
     PRODUCT_PAGE__ADD_TO_CART = (By.CSS_SELECTOR, "button.btn-add-to-basket")
-    PRODUCT_PAGE__CART_ADDED_TITLE = (By.XPATH,
-                                '//div[@id="messages"]/div/div[contains(., "було додано до Вашого кошику")]/strong')
+    PRODUCT_PAGE__CART_ADDED_TITLE = (By.XPATH, '//div[@id="messages"]/div[1]/div/strong')
     PRODUCT_PAGE__CART_TOTAL_COST = (By.CSS_SELECTOR, 'div#messages div.alert-info p strong')
 
     SUCCESS_MESSAGE = (By.CSS_SELECTOR, 'div#messages div')
