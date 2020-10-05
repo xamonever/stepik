@@ -6,10 +6,20 @@ class BasePageLocators:
     BASKET_LINK = (By.CSS_SELECTOR, ".basket-mini span a")
     LOGIN_FORM = (By.CSS_SELECTOR, "#login_form")
 
+    USER_ICON = (By.CSS_SELECTOR, ".icon-user")
+
 
 class BasketPageLocators:
     BASKET_ITEMS = (By.CSS_SELECTOR, "#content_inner div.basket-items>div.row")
     MESSAGE_FOR_EMPTY_BASKET = (By.CSS_SELECTOR, "#content_inner>p>a")
+
+
+class LoginPageLocators:
+    EMAIL_FIELD = (By.CSS_SELECTOR, 'div.register_form input[name="registration-email"]')
+    PASSWORD_FIELD = (By.CSS_SELECTOR, 'div.register_form input[name="registration-password1"]')
+    CONFIRM_PASSWORD_FIELD = (By.CSS_SELECTOR, 'div.register_form input[name="registration-password2"]')
+
+    SUBMIT_BUTTON = (By.CSS_SELECTOR, '*[value="Register"]')
 
 
 class MainPageLocators:

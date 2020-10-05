@@ -1,5 +1,5 @@
-from stepik.page_object import BasePage
-from stepik.page_object import BasketPageLocators
+from stepik.page_object.pages.base_page import BasePage
+from stepik.page_object.pages.locators import BasketPageLocators
 
 
 class BasketPage(BasePage):
