@@ -2,7 +2,7 @@ from selenium.common.exceptions import NoSuchElementException, TimeoutException
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.wait import WebDriverWait
 
-from stepik.page_object import BasePageLocators
+from .locators import BasePageLocators
 
 
 class BasePage:
@@ -48,7 +48,9 @@ class BasePage:
         link = self.wd.find_element(*BasePageLocators.BASKET_LINK)
         link.click()
 
-
+    def should_be_authorized_user(self):
+        assert self.is_element_present(*BasePageLocators.USER_ICON), "User icon is not presented," \
+                                                                     " probably unauthorised user"
 
 
 
